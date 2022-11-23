@@ -91,6 +91,3 @@ class ConcorrenteGF:
             f"Score neutro: {self.getScoreNeutro()}\n"  \
             f"Score tendente-positivo: {self.getScoreTendentePositivo()}\n" \
             f"Score positivo: {self.getScorePositivo()}\n"
-
-
-
