@@ -84,6 +84,13 @@ class ConcorrenteGF:
         if isinstance(o, ConcorrenteGF):
             return (o.nome == self.nome) and (o.cognome == self.cognome)
 
+    def __str__(self):
+        return f"Concorrente: {self.getName()} {self.cognome} \n"   \
+            f"Score negativo: {self.getScoreNegativo}\n"    \
+            f"Score tendente-negativo: {self.getScoreTendenteNegativo()}\n" \
+            f"Score neutro: {self.getScoreNeutro()}\n"  \
+            f"Score tendente-positivo: {self.getScoreTendentePositivo()}\n" \
+            f"Score positivo: {self.getScorePositivo()}\n"
 
 
 
