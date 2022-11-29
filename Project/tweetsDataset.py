@@ -2,11 +2,12 @@ from main import *
 import csv
 
 # Nomi dei file
-name_file_tweets = "./Dataset_tweets/2021/Amici(27-01-2022).csv"
-name_file_concorrenti_score = "./Dataset_tweets/2021/Amici_Score_Concorrenti(27-01-2022).csv"
-
+name_file_tweets = "./Dataset_tweets/GFVip(" + str(date_tweepy) + ").csv"
+name_file_concorrenti_score = "./Dataset_tweets/GFVip_Score_Concorrenti(" + str(date_tweepy) + ").csv"
+name_file_sumScore = "./Dataset_tweets/GFVip_Score_Concorrenti.csv"
 # ----------- 1 parte -----------
-print(f"\nWriting in file '{name_file_tweets}' ...")
+print(f"\n---Writing in file '{name_file_tweets}' ...---")
+
 # Creazione nostro file dove salveremo tutti i tweets con le relative informazioni
 csv_file = open(name_file_tweets, 'w', encoding='utf-8', newline='')
 writer = csv.writer(csv_file)
@@ -15,11 +16,11 @@ writer.writerow(head1)
 
 def converto_in_list(lista):
     stringa = ""
-    for e in range(len(lista)):
-        if (e == len(lista)-1):
-            stringa += str(lista[e])
-        elif (e < len(lista)-1):
-            stringa += str(lista[e]) + ";"
+    for i in range(len(lista)):
+        if (i == len(lista)-1):
+            stringa += str(lista[i])
+        elif (i < len(lista)-1):
+            stringa += str(lista[i]) + ";"
 
     return stringa
 
@@ -32,10 +33,10 @@ csv_file.close()
 
 
 
-print(f"File '{name_file_tweets}' writing completed!")
+print(f"---File '{name_file_tweets}' writing completed!---")
 
 # ----------- 2 parte -----------
-print(f"\nWriting in file '{name_file_concorrenti_score}' ...")
+print(f"\n---Writing in file '{name_file_concorrenti_score}' ...---")
 # Creazione nostro file dove salveremo gli score di ogni concorrente
 csv_file = open(name_file_concorrenti_score, 'w', encoding='utf-8', newline='')
 writer = csv.writer(csv_file)
@@ -43,9 +44,9 @@ head2 = ["Name_concorrente","score_negativo","score_tendente_negativo","score_ne
 writer.writerow(head2)
 
 # Aggiunta dei concorrenti con i relativi score nel file CSV
-for c in concorrenti_amici_objects:
+for c in concGF:
     writer.writerow([str(c.getName()), str(c.getScoreNegativo()), str(c.getScoreTendenteNegativo()), str(c.getScoreNeutro()), str(c.getScoreTendentePositivo()),
                      str(c.getScorePositivo())])
 csv_file.close()
 
-print(f"File '{name_file_concorrenti_score}' writing completed!")
+print(f"---File '{name_file_concorrenti_score}' writing completed!---")

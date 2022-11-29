@@ -1,6 +1,7 @@
 import copy
 import re
 from googletrans import Translator
+from vaderSentiment.vaderSentiment import SentimentIntensityAnalyzer
 
 def cleanTweet(string):
     string = string.strip()     #Rimuovo spazi bianchi
@@ -44,5 +45,49 @@ def translatorTweet(string):
     tweet.setText((trans.translate(tweet.getText(), src="it", dest="en")).text)
     return tweet
 
+# Tweet
+def print_tweet(tweet):
+    print("\033[1m" + "Id: " + "\033[0m" + str(tweet.getId()))
+    print("\033[1m" + "Screen_name: " + "\033[0m" + tweet.getScreen_name())
+    print("\033[1m" + "Created_at: " + "\033[0m" + str(tweet.getCreated_at()))
+    print("\033[1m" + "Retweet: " + "\033[0m" + tweet.getRetweet())
+    print("\033[1m" + "Text: " + "\033[0m" + tweet.getText())
+    print("\033[1m" + "Hashtags: " + "\033[0m" + tweet.getHashtags())
+    print("\033[1m" + "Sentiment: " + "\033[0m" + str(tweet.getSentiment()))
+    print("\033[1m" + "Compound: " + "\033[0m" + str(tweet.getCompound()))
 
 
+def calculate_and_set_compound_score_to_tweet(tweet):
+    analyzer = SentimentIntensityAnalyzer()
+    sentiment = analyzer.polarity_scores(tweet.getText())
+    compound = sentiment("compound")
+    tweet.setCompound(compound)
+
+def calculate_and_set_sentiment_score_to_tweet(tweet):
+    sentimentAnalysis = Sentiment()
+    tweet.setSentiment(sentimentAnalysis[0])
+
+
+def print_emotion_score(tweet):
+    sentimentAnalysis = Sentiment(tweet.getCompound())
+    print("\033[1m" + "Risultato: " + "\033[0m" + sentimentAnalysis[1])
+
+def Sentiment(compound):
+    emotion = ""
+    if (compound <= -0.5501 and compound >= -1):
+        sentimentAnalysis = 1
+        emotion = "Negativo"
+    if (compound <= -0.2001 and compound >= -0.5500):
+        sentimentAnalysis = 2
+        emotion = "Tendente negativo"
+    if (compound >= -0.2000 and compound <= 0.2000):
+        sentimentAnalysis = 3
+        emotion = "Neutro"
+    if (compound >= 0.2001 and compound <= 0.5500):
+        sentimentAnalysis = 4
+        emotion = "Tendente positivo"
+    if (compound >= 0.5501 and compound <= 1):
+        sentimentAnalysis = 5
+        emotion = "Positivo"
+
+    return sentimentAnalysis, emotion

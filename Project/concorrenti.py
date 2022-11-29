@@ -2,7 +2,7 @@ from ConcorrenteGf import *
 import pandas
 
 # andiamo a registrare tutti concorrenti del GF Vip prendendo i nomi dal file
-inputFile = "sentimentAnalysis-GFVip/concorrentiGF.csv"
+inputFile = "concorrentiGF.csv"
 df = pandas.read_csv(inputFile, header=0, delimiter=";")
 
 # si inseriscono le colonne del file in un oggetto numpy
