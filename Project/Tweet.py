@@ -1,6 +1,5 @@
 class Tweet:
     class Tweet:
-
         # Metodo costruttore
         def __init__(self, tid, screen_name, created_at, retweet, text,
                      hashtags, sentiment, compound):
@@ -12,6 +11,17 @@ class Tweet:
             self.hashtags = hashtags
             self.sentiment = sentiment
             self.compound = compound
+            self.ents = []
+
+        def __init__(self):
+            self.tweetId = ""
+            self.screen_name = ""
+            self.created_at = ""
+            self.retweet = ""
+            self.text = ""
+            self.hashtags = ""
+            self.sentiment = ""
+            self.compound = ""
             self.ents = []
 
         # Getter
