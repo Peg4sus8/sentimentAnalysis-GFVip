@@ -3,11 +3,11 @@ class ConcorrenteGF:
     def __init__(self, nome, cognome):
         self.nome = nome
         self.cognome = cognome
-        self.score_negativo = 0
-        self.score_tendente_negativo = 0
-        self.score_neutro = 0
-        self.score_tendente_positivo = 0
-        self.score_positivo = 0
+        self.score_negativo = 0.0
+        self.score_tendente_negativo = 0.0
+        self.score_neutro = 0.0
+        self.score_tendente_positivo = 0.0
+        self.score_positivo = 0.0
 
     # Metodi getter
     def getName(self):

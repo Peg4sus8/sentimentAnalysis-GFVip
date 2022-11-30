@@ -46,12 +46,11 @@ research = hashtags + " -filter:retweets"
 
 print("-----------Start tweet capturing------------\n")
 date_tweepy = datetime.date.today()
-print("", date_tweepy)
 date_to_match_in_csv = date_tweepy - datetime.timedelta(days=1)
-print("", date_to_match_in_csv)
 for tweet in tweepy.Cursor(api.search_tweets, q=research, lang="it",
                            until=date_tweepy, result_type="mixed",
                            tweet_mode="extended").items(100):
+
     rt_count = tweet.retweet_count
     p2 = ["", tweet.full_text]
     hast = ""
@@ -89,6 +88,7 @@ for tweet in tweepy.Cursor(api.search_tweets, q=research, lang="it",
         tweets.append(tt)  # tweet italiani
         tweetsTranslated.append(translatorTweet(tt))  # tweet inglesi
 for t in tweets:
+    print("fro")
     calculate_and_set_compound_score_to_tweet(t)
     calculate_and_set_sentiment_score_to_tweet(t)
     print_tweet(t)
@@ -96,7 +96,7 @@ for t in tweets:
     print()
 
 print("Analisi più dettagliata dei Tweet")
-nlp = spacy.load("it_core_news_sm")
+nlp = spacy.load('it_core_news_sm')
 
 print(concGF)
 for tweet in tweets:
