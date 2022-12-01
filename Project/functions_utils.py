@@ -1,5 +1,6 @@
 import copy
 import re
+
 from googletrans import Translator
 from vaderSentiment.vaderSentiment import SentimentIntensityAnalyzer
 
@@ -60,11 +61,12 @@ def print_tweet(tweet):
 def calculate_and_set_compound_score_to_tweet(tweet):
     analyzer = SentimentIntensityAnalyzer()
     sentiment = analyzer.polarity_scores(tweet.getText())
-    compound = sentiment("compound")
+    print(sentiment["compound"])
+    compound = sentiment["compound"]
     tweet.setCompound(compound)
 
 def calculate_and_set_sentiment_score_to_tweet(tweet):
-    sentimentAnalysis = Sentiment()
+    sentimentAnalysis = Sentiment(tweet.getCompound())
     tweet.setSentiment(sentimentAnalysis[0])
 
 
@@ -91,3 +93,4 @@ def Sentiment(compound):
         emotion = "Positivo"
 
     return sentimentAnalysis, emotion
+

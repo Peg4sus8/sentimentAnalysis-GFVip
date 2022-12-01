@@ -11,7 +11,7 @@ from Config import *
 config = DefaultConfig()
 auth = tweepy.OAuthHandler(config.CONS_KEY, config.CONS_SECR)
 auth.set_access_token(config.ACCESS_TOKEN, config.ACCESS_TOKEN_SECRET)
-client = config.BEARER
+# client = config.BEARER
 api = tweepy.API(auth)
 
 """     ------------------STAMPA CONCORRENTI-------------------------
@@ -25,7 +25,7 @@ tweetsTranslated = []
 nConc = len(concGF) - 1
 
 # Inserimento hashtag
-hashtags = "#GFVip AND ( "
+hashtags = "#GFVip AND ("
 for t in range(nConc):
     if concGF[t].getName() == "Luca" or concGF[t].getName() == "Edoardo":
         hashtags += "#" + concGF[t].getCognome()
@@ -46,11 +46,20 @@ research = hashtags + " -filter:retweets"
 
 print("-----------Start tweet capturing------------\n")
 date_tweepy = datetime.date.today()
+print("Today: ", date_tweepy)
 date_to_match_in_csv = date_tweepy - datetime.timedelta(days=1)
+print("Yesterday: ", date_to_match_in_csv)
+"""
+tmp = tweepy.Cursor(api.search_tweets, q=research, lang="it",
+                    until=date_tweepy, result_type="mixed",
+                    tweet_mode="extended").items(100)
+"""
+tmp = api.search_tweets(q=research, count="100")
+print(len(tmp))
+i=0
 for tweet in tweepy.Cursor(api.search_tweets, q=research, lang="it",
-                           until=date_tweepy, result_type="mixed",
-                           tweet_mode="extended").items(100):
-
+                           tweet_mode="extended", count="100").items(500):
+    print(tweet.full_text)
     rt_count = tweet.retweet_count
     p2 = ["", tweet.full_text]
     hast = ""
@@ -83,12 +92,13 @@ for tweet in tweepy.Cursor(api.search_tweets, q=research, lang="it",
         "Compound": 0
     }"""
 
-    tt = Tweet.Tweet(tweet.id, tweet.user.name, tweet.created_at, str(rt_count), tweet.full_text, hast, 0, 0)
+    tt = Tweet(tweet.id, tweet.user.name, tweet.created_at, str(rt_count), tweet.full_text, hast, 0, 0)
+    print_tweet(tt)
     if str(tt.getCreated_at()).find(str(date_to_match_in_csv)) != -1:
         tweets.append(tt)  # tweet italiani
         tweetsTranslated.append(translatorTweet(tt))  # tweet inglesi
+
 for t in tweets:
-    print("fro")
     calculate_and_set_compound_score_to_tweet(t)
     calculate_and_set_sentiment_score_to_tweet(t)
     print_tweet(t)
@@ -133,3 +143,4 @@ for c in concGF:
     print()
 
 print("Done analysis!")
+
