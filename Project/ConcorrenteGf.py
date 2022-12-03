@@ -19,25 +19,25 @@ class ConcorrenteGF:
         return self.cognome
 
     def getScoreNegativo(self):
-        return self.score_negativo
+        return float(self.score_negativo)
 
     def getScoreTendenteNegativo(self):
-        return self.score_tendente_negativo
+        return float(self.score_tendente_negativo)
 
     def getScoreNeutro(self):
-        return self.score_neutro
+        return float(self.score_neutro)
 
     def getScoreTendentePositivo(self):
-        return self.score_tendente_positivo
+        return float(self.score_tendente_positivo)
 
     def getScorePositivo(self):
-        return self.score_positivo
+        return float(self.score_positivo)
 
     def getHashtags(self):
         return self.hashtags
 
     def getRank(self):
-        return self.rank
+        return float(self.rank)
 
     # Metodi setter
     def setNome(self, nome):
@@ -101,11 +101,14 @@ class ConcorrenteGF:
             print("ERRORE IN FUNZIONE 'addScore' di 'Concorrente_Amici'\n")
 
     def calculateRank(self):
-        self.rank += float(self.getScoreNegativo() * (-1))
-        self.rank += float(self.getScoreTendenteNegativo() * (-0.5))
-        self.rank += float(self.getScoreNeutro() * 0)
-        self.rank += float(self.getScoreTendentePositivo() * 0.5)
-        self.rank += float(self.getScorePositivo() * 1)
+        self.rank = float(self.rank)
+        self.rank += float(self.getScoreNegativo()) * (-1.0)
+        self.rank += float(self.getScoreTendenteNegativo()) * (-0.5)
+        self.rank += float(self.getScoreNeutro()) * 0.0
+        self.rank += float(self.getScoreTendentePositivo()) * 0.5
+        self.rank += float(self.getScorePositivo()) * 1.0
+
+        return self.rank
 
     # metodi Object
     def __eq__(self, o: object):

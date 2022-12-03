@@ -61,7 +61,7 @@ def print_tweet(tweet):
 def calculate_and_set_compound_score_to_tweet(tweet):
     analyzer = SentimentIntensityAnalyzer()
     sentiment = analyzer.polarity_scores(tweet.getText())
-    print(sentiment["compound"])
+   # print(sentiment["compound"])
     compound = sentiment["compound"]
     tweet.setCompound(compound)
 

@@ -17,6 +17,7 @@ nConc = len(concGF)
 query = "#GFVip AND ("
 date_tweepy = datetime.date.today()
 date_to_match_in_csv = date_tweepy - datetime.timedelta(days=1)
+
 tweets = []
 tweetsTranslated = []
 
@@ -32,7 +33,7 @@ query += "-filter:retweet"
 print(query)
 
 # ------- tweet capturing------
-for tweet in tweepy.Cursor(api.search_tweets, q=query, lang="it", until=date_tweepy, tweet_mode="extended", count=100).items(1000):
+for tweet in tweepy.Cursor(api.search_tweets, q=query, lang="it", until=date_tweepy, tweet_mode="extended", count=100).items(5000):
     if 'retweeted_status' in dir(tweet):
         text = tweet.retweeted_status.full_text
     else:
@@ -68,8 +69,8 @@ print(len(tweets))
 for i in range(len(tweets)):
     calculate_and_set_compound_score_to_tweet(tweets[i])
     calculate_and_set_sentiment_score_to_tweet(tweets[i])
-    print_tweet(tweets[i])
-    print_emotion_score(tweets[i])
+    #print_tweet(tweets[i])
+    #print_emotion_score(tweets[i])
 
 
 
