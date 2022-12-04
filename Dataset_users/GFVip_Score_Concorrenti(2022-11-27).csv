@@ -1,19 +1,19 @@
 Name,Cognome,score_negativo,score_tendente_negativo,score_neutro,score_tendente_positivo,score_positivo,rank
-Antonella,Fiordelisi,0.0,4.0,45.0,20.0,10.0,18.0
-Antonino,Spinalbese,2.0,1.0,6.0,7.0,1.0,2.0
-Attilio,Romita,0.0,0.0,9.0,0.0,0.0,0.0
-Charlie,Gnocchi,0.0,0.0,17.0,15.0,0.0,7.5
-Daniele,Dal Moro,0.0,0.0,3.0,0.0,5.0,5.0
-Edoardo,Donnamaria,0.0,6.0,12.0,2.0,1.0,-1.0
-Edoardo,Tavassi,0.0,6.0,12.0,2.0,1.0,-1.0
-George,Ciupilan,0.0,0.0,4.0,2.0,0.0,1.0
-Luca,Onestini,0.0,4.0,10.0,7.0,0.0,1.5
-Luca,Salatino,0.0,4.0,10.0,7.0,0.0,1.5
-Luciano,Punzo,0.0,0.0,5.0,2.0,1.0,2.0
-Micol,Incorvaia,16.0,5.0,109.0,6.0,7.0,-8.5
-Nikita,Pelizon,1.0,10.0,67.0,23.0,33.0,38.5
-Oriana,Marzioli,0.0,3.0,21.0,18.0,1.0,8.5
-Patrizia,Rossetti,2.0,2.0,98.0,4.0,3.0,2.0
-Sarah,Altobelli,0.0,0.0,7.0,0.0,1.0,1.0
-Giaele,De Donà,0.0,0.0,0.0,0.0,0.0,0.0
-Wilma,Goich,2.0,0.0,48.0,4.0,1.0,1.0
+Antonella,Fiordelisi,6.0,14.0,277.0,222.0,63.0,161.0
+Antonino,Spinalbese,2.0,6.0,49.0,75.0,29.0,61.5
+Attilio,Romita,1.0,0.0,11.0,3.0,1.0,1.5
+Charlie,Gnocchi,0.0,0.0,18.0,18.0,1.0,10.0
+Daniele,Dal Moro,8.0,0.0,35.0,3.0,44.0,37.5
+Edoardo,Donnamaria,0.0,0.0,0.0,0.0,0.0,0.0
+Edoardo,Tavassi,0.0,0.0,8.0,0.0,1.0,1.0
+George,Ciupilan,0.0,0.0,34.0,8.0,1.0,5.0
+Luca,Onestini,0.0,0.0,12.0,0.0,9.0,9.0
+Luca,Salatino,0.0,0.0,0.0,12.0,0.0,6.0
+Luciano,Punzo,1.0,1.0,15.0,12.0,14.0,18.5
+Micol,Incorvaia,30.0,72.0,434.0,50.0,18.0,-23.0
+Nikita,Pelizon,8.0,57.0,427.0,273.0,102.0,202.0
+Oriana,Marzioli,2.0,12.0,125.0,89.0,32.0,68.5
+Patrizia,Rossetti,6.0,41.0,362.0,81.0,28.0,42.0
+Sarah,Altobelli,0.0,0.0,27.0,0.0,7.0,7.0
+Giaele,De Donà,0.0,2.0,10.0,2.0,1.0,1.0
+Wilma,Goich,6.0,21.0,354.0,52.0,11.0,20.5

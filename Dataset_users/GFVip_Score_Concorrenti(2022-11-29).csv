@@ -1,19 +1,19 @@
 Name,Cognome,score_negativo,score_tendente_negativo,score_neutro,score_tendente_positivo,score_positivo,rank
-Antonella,Fiordelisi,6.0,18.0,46.0,22.0,5.0,1.0
-Antonino,Spinalbese,3.0,0.0,26.0,2.0,11.0,9.0
+Antonella,Fiordelisi,12.0,63.0,297.0,120.0,34.0,50.5
+Antonino,Spinalbese,10.0,1.0,89.0,15.0,20.0,17.0
 Attilio,Romita,0.0,0.0,0.0,0.0,0.0,0.0
-Charlie,Gnocchi,0.0,1.0,67.0,5.0,0.0,2.0
-Daniele,Dal Moro,1.0,1.0,5.0,6.0,4.0,5.5
-Edoardo,Donnamaria,2.0,5.0,15.0,3.0,2.0,-1.0
-Edoardo,Tavassi,2.0,5.0,15.0,3.0,2.0,-1.0
-George,Ciupilan,0.0,0.0,22.0,8.0,0.0,4.0
-Luca,Onestini,0.0,0.0,4.0,0.0,0.0,0.0
-Luca,Salatino,0.0,0.0,4.0,0.0,0.0,0.0
+Charlie,Gnocchi,0.0,1.0,102.0,16.0,0.0,7.5
+Daniele,Dal Moro,22.0,1.0,59.0,26.0,92.0,82.5
+Edoardo,Donnamaria,0.0,0.0,62.0,2.0,7.0,8.0
+Edoardo,Tavassi,0.0,0.0,4.0,0.0,0.0,0.0
+George,Ciupilan,0.0,0.0,31.0,11.0,0.0,5.5
+Luca,Onestini,0.0,0.0,2.0,0.0,0.0,0.0
+Luca,Salatino,0.0,0.0,0.0,1.0,0.0,0.5
 Luciano,Punzo,0.0,0.0,0.0,0.0,0.0,0.0
-Micol,Incorvaia,1.0,1.0,46.0,15.0,2.0,8.0
-Nikita,Pelizon,7.0,25.0,94.0,114.0,24.0,61.5
-Oriana,Marzioli,0.0,1.0,26.0,1.0,4.0,4.0
-Patrizia,Rossetti,0.0,8.0,55.0,10.0,9.0,10.0
-Sarah,Altobelli,0.0,0.0,2.0,1.0,16.0,16.5
-Giaele,De Donà,0.0,0.0,7.0,3.0,0.0,1.5
-Wilma,Goich,0.0,3.0,46.0,3.0,1.0,1.0
+Micol,Incorvaia,38.0,23.0,349.0,96.0,23.0,21.5
+Nikita,Pelizon,16.0,68.0,426.0,223.0,53.0,114.5
+Oriana,Marzioli,4.0,4.0,114.0,38.0,12.0,25.0
+Patrizia,Rossetti,27.0,54.0,267.0,43.0,153.0,120.5
+Sarah,Altobelli,0.0,0.0,3.0,3.0,16.0,17.5
+Giaele,De Donà,0.0,0.0,43.0,11.0,2.0,7.5
+Wilma,Goich,5.0,21.0,236.0,58.0,17.0,30.5

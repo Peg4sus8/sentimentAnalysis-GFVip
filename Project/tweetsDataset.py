@@ -63,6 +63,7 @@ print(f"---File '{name_file_concorrenti_score}' writing completed!---")
 
 # -------- Concorrenti: Score generale --------
 # ------ Creazione file ------
+"""
 print(f"\n---Writing in file '{name_file_sumScore}' ...")
 
 csv_file = open(name_file_sumScore, "w", encoding='utf-8', newline='')
@@ -78,6 +79,7 @@ for c in concGF:
 csv_file.close()
 
 # ------ Aggiornamento ------
+"""
 print(f"\n---Editing in file '{name_file_sumScore}' ...")
 concTot = []
 concParz = []
