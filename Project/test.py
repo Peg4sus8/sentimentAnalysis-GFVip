@@ -1,8 +1,8 @@
 import csv
 from ConcorrenteGf import ConcorrenteGF
 
-yesterday = "../Dataset_users/GFVip_Score_Concorrenti(2022-11-26).csv"
-today = "../Dataset_users/GFVip_Score_Concorrenti(2022-11-27).csv"
+yesterday = "../Dataset_users/GFVip_Score_Concorrenti.csv"
+today = "../Dataset_users/GFVip_Score_Concorrenti(2022-12-04).csv"
 sumFile = "../Dataset_users/GFVip_Score_Concorrenti.csv"
 
 yesConc = []
