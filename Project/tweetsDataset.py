@@ -63,7 +63,6 @@ print(f"---File '{name_file_concorrenti_score}' writing completed!---")
 
 # -------- Concorrenti: Score generale --------
 # ------ Creazione file ------
-"""
 print(f"\n---Writing in file '{name_file_sumScore}' ...")
 
 csv_file = open(name_file_sumScore, "w", encoding='utf-8', newline='')
@@ -77,8 +76,7 @@ for c in concGF:
          str(c.getScoreNeutro()), str(c.getScoreTendentePositivo()),
          str(c.getScorePositivo()), str(c.getRank())])
 csv_file.close()
-"""
-"""
+
 # ------ Aggiornamento ------
 print(f"\n---Editing in file '{name_file_sumScore}' ...")
 concTot = []
@@ -143,5 +141,5 @@ with open(name_file_sumScore, mode="w", encoding='UTF8', newline='') as csv_writ
              str(concTot[x].getScoreTendenteNegativo()), str(concTot[x].getScoreNeutro()),
              str(concTot[x].getScoreTendentePositivo()), str(concTot[x].getScorePositivo()),
              str(concTot[x].getRank())])
-"""
+
 # -------- fine --------
