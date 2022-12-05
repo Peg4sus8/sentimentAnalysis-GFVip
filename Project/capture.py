@@ -16,10 +16,10 @@ api = tweepy.API(auth)
 nConc = len(concGF)
 query = "#GFVip AND ("
 
-date_tweepy = datetime.date.today()
-date_to_match_in_csv = date_tweepy - datetime.timedelta(days=1)
-#date_tweepy = "2022-12-03"
-#date_to_match_in_csv = "2022-12-02"
+#date_tweepy = datetime.date.today()
+#date_to_match_in_csv = date_tweepy - datetime.timedelta(days=1)
+date_tweepy = "2022-12-04"
+date_to_match_in_csv = "2022-12-03"
 
 tweets = []
 tweetsTranslated = []

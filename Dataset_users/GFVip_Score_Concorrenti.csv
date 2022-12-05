@@ -1,19 +1,19 @@
 Name,Cognome,score_negativo,score_tendente_negativo,score_neutro,score_tendente_positivo,score_positivo,rank
-Antonella,Fiordelisi,35.0,163.0,1442.0,608.0,405.0,592.5
-Antonino,Spinalbese,50.0,113.0,690.0,314.0,159.0,209.5
-Attilio,Romita,9.0,2.0,106.0,38.0,20.0,29.0
-Charlie,Gnocchi,27.0,18.0,305.0,81.0,15.0,19.5
-Daniele,Dal Moro,37.0,50.0,594.0,214.0,251.0,296.0
-Edoardo,Donnamaria,20.0,1.0,138.0,21.0,20.0,10.0
-Edoardo,Tavassi,2.0,0.0,106.0,13.0,13.0,17.5
-George,Ciupilan,7.0,28.0,530.0,126.0,132.0,174.0
-Luca,Onestini,0.0,0.0,120.0,19.0,34.0,43.5
-Luca,Salatino,0.0,11.0,23.0,17.0,5.0,8.0
-Luciano,Punzo,3.0,7.0,139.0,41.0,43.0,57.0
-Micol,Incorvaia,178.0,184.0,1863.0,413.0,170.0,106.5
-Nikita,Pelizon,73.0,324.0,2501.0,1194.0,705.0,1067.0
-Oriana,Marzioli,10.0,102.0,878.0,269.0,158.0,231.5
-Patrizia,Rossetti,83.0,162.0,1288.0,270.0,289.0,260.0
-Sarah,Altobelli,2.0,8.0,152.0,26.0,35.0,42.0
-Giaele,De Donà,7.0,47.0,436.0,113.0,70.0,96.0
-Wilma,Goich,22.0,130.0,1085.0,322.0,79.0,153.0
+Antonella,Fiordelisi,52.0,227.0,1840.0,762.0,476.0,691.5
+Antonino,Spinalbese,67.0,169.0,1152.0,455.0,235.0,311.0
+Attilio,Romita,9.0,10.0,264.0,87.0,33.0,62.5
+Charlie,Gnocchi,41.0,59.0,793.0,325.0,83.0,175.0
+Daniele,Dal Moro,38.0,69.0,772.0,329.0,286.0,378.0
+Edoardo,Donnamaria,22.0,1.0,163.0,27.0,22.0,13.0
+Edoardo,Tavassi,4.0,4.0,186.0,18.0,16.0,19.0
+George,Ciupilan,8.0,80.0,954.0,222.0,156.0,219.0
+Luca,Onestini,0.0,9.0,148.0,38.0,45.0,59.5
+Luca,Salatino,0.0,11.0,74.0,27.0,11.0,19.0
+Luciano,Punzo,10.0,25.0,269.0,71.0,66.0,79.0
+Micol,Incorvaia,195.0,253.0,2080.0,477.0,216.0,133.0
+Nikita,Pelizon,74.0,522.0,3202.0,1461.0,838.0,1233.5
+Oriana,Marzioli,12.0,172.0,1231.0,348.0,200.0,276.0
+Patrizia,Rossetti,84.0,188.0,1391.0,296.0,303.0,273.0
+Sarah,Altobelli,2.0,19.0,175.0,32.0,36.0,40.5
+Giaele,De Donà,9.0,61.0,535.0,137.0,86.0,115.0
+Wilma,Goich,22.0,148.0,1140.0,334.0,84.0,155.0
