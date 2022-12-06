@@ -32,7 +32,7 @@ for tweet in tweets:
                     concorrente.addScore(tweet.getSentiment())
                     concGF_clone.pop(concGF_clone.index(concorrente))
                     # print("text: " + entity.text, ", concorrente_name: " + concorrente.getName())
-        print(entity)
+        #print(entity)
                 # print("FINE " + "text: " + entity.text, "type/label: " + entity.label_)
 
     tweet.setEnts(ents)
