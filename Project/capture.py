@@ -18,8 +18,8 @@ query = "#GFVip AND ("
 
 date_tweepy = datetime.date.today()
 date_to_match_in_csv = date_tweepy - datetime.timedelta(days=1)
-#date_tweepy = "2022-12-10"
-#date_to_match_in_csv = "2022-12-09"
+#date_tweepy = "2022-12-14"
+#date_to_match_in_csv = "2022-12-13"
 
 tweets = []
 tweetsTranslated = []
