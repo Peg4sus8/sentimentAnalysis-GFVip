@@ -1,0 +1,19 @@
+Name,Cognome,score_negativo,score_tendente_negativo,score_neutro,score_tendente_positivo,score_positivo,rank
+Antonella,Fiordelisi,34.0,46.0,400.0,115.0,85.0,85.5
+Antonino,Spinalbese,1.0,0.0,46.0,4.0,8.0,9.0
+Attilio,Romita,4.0,2.0,3.0,1.0,4.0,-0.5
+Charlie,Gnocchi,0.0,0.0,0.0,0.0,0.0,0.0
+Daniele,Dal Moro,31.0,6.0,221.0,123.0,99.0,126.5
+Edoardo,Donnamaria,0.0,0.0,0.0,0.0,0.0,0.0
+Edoardo,Tavassi,0.0,1.0,1.0,1.0,0.0,0.0
+George,Ciupilan,1.0,11.0,73.0,28.0,25.0,32.5
+Luca,Onestini,1.0,2.0,2.0,2.0,7.0,6.0
+Luca,Salatino,0.0,0.0,34.0,1.0,0.0,0.5
+Luciano,Punzo,0.0,0.0,0.0,0.0,0.0,0.0
+Micol,Incorvaia,13.0,13.0,94.0,63.0,33.0,45.0
+Nikita,Pelizon,54.0,125.0,566.0,175.0,166.0,137.0
+Oriana,Marzioli,35.0,63.0,577.0,143.0,90.0,95.0
+Patrizia,Rossetti,17.0,1.0,69.0,8.0,6.0,-7.5
+Sarah,Altobelli,0.0,0.0,5.0,0.0,0.0,0.0
+Giaele,De Donà,0.0,28.0,68.0,11.0,21.0,12.5
+Wilma,Goich,19.0,9.0,53.0,18.0,21.0,6.5
