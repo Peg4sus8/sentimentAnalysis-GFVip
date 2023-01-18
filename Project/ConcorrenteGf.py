@@ -67,7 +67,7 @@ class ConcorrenteGF:
     def buildHashtag(self):
         self.hashtags = []
         provv = "#"
-        if self.getName()!="Luca" or self.getName()!="Edoardo":
+        if self.getName()!="Edoardo":
             provv += self.getName()
             self.hashtags.append(provv)
         else:
