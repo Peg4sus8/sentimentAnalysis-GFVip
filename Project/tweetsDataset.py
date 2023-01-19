@@ -7,7 +7,7 @@ import pandas
 
 name_file_tweets = "../Dataset_tweets/GFVip(" + str(date_tweepy) + ").csv"
 name_file_concorrenti_score = "../Dataset_users/GFVip_Score_Concorrenti(" + str(date_tweepy) + ").csv"
-name_file_sumScore = "../Dataset_users/GFVip_Score_Concorrenti.csv"
+name_file_sumScore = "../Dataset_users/FinalFiles/GFVip_Score_Concorrenti.csv"
 
 # ----------- Dataset -----------
 print(f"\n---Writing in file '{name_file_tweets}' ...")
